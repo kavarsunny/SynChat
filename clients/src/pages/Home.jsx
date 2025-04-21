@@ -79,7 +79,11 @@ function Home() {
                   <div className='flex'>
                     <a className='flex items-center relative  -top-4 block h-[90px]' href='/'>
 
-                      <h3 className='text-[20px] text-[#1f2228] font-body font-extrabold tracking-wider'>Messages</h3>
+                    <h3 className='text-[20px] text-[#1f2228] font-body font-extrabold tracking-wider flex items-center'>
+  <img src="image.png" alt="ok" className="w-6 h-6 mr-2" />
+  SynChat
+</h3>
+
                     </a>
                   </div>
                   <div className='absolute top-4 right-5 flex items-center gap-x-3'>

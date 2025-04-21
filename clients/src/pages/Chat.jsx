@@ -102,7 +102,7 @@ function Chat(props) {
       {
         activeChat ?
           <div className={props.className}>
-            <div className='flex justify-between items-center px-5 bg-[#ffff] w-[100%]'>
+            <div className='flex justify-between items-center px-3 bg-[#c2c2c400] w-[100%]'>
               <div className='flex items-center gap-x-[10px]'>
                 <div className='flex flex-col items-start justify-center'>
                   <h5 className='text-[17px] text-[#2b2e33] font-bold tracking-wide'>{getChatName(activeChat, activeUser)}</h5>
@@ -127,7 +127,7 @@ function Chat(props) {
               {
                 showPicker && <Picker data={data} onEmojiSelect={(e) => setMessage(message + e.native)} />
               }
-              <div className='border-[1px] border-[#aabac8] px-6 py-3 w-[360px] sm:w-[400px] md:w-[350px] h-[50px] lg:w-[400px] rounded-t-[10px]'>
+              <div className='border-[2px] border-[#154671] px-6 py-3 w-[360px] sm:w-[400px] md:w-[350px] h-[50px] lg:w-[450px] rounded-t-[10px]'>
 
                 <form onKeyDown={(e) => keyDownFunction(e)} onSubmit={(e) => e.preventDefault()}>
                   <input onChange={(e) => {
@@ -147,12 +147,12 @@ function Chat(props) {
                         setTyping(false)
                       }
                     }, time)
-                  }} className='focus:outline-0 w-[100%] bg-[#f8f9fa]' type="text" name="message" placeholder="Enter message" value={message} />
+                  }} className='focus:outline-0 w-[100%]  rounded-b-[20px]  bg-[#f8f9fa]' type="text" name="message" placeholder="Type message..." value={message} />
                 </form>
 
               </div>
 
-              <div className='border-x-[1px] border-b-[1px] bg-[#f8f9fa] border-[#aabac8] px-6 py-3 w-[360px] sm:w-[400px] md:w-[350px] lg:w-[400px] rounded-b-[10px] h-[50px]'>
+              <div className='border-x-[1px] border-b-[1px] bg-[#f8f9fa] border-[#aabac8] px-6 py-3 w-[460px] sm:w-[600px] md:w-[550px] lg:w-[450px] rounded-b-[20px] h-[60px]'>
                 {/* {
                   isTyping ? <div>Loading</div> : ""
                 } */}
